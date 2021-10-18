@@ -1,0 +1,84 @@
+.movieArticle {
+  display: flex;
+  width: auto;
+  justify-content: flex-start;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 2px solid #b00b6842;
+  box-shadow: box-shadow;
+  text-align: start;
+}
+
+.posterThumb {
+  width: 320px;
+  margin-right: 10px;
+}
+
+/* .poster {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+} */
+
+.infoContainer {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.movieTitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.label,
+.score {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.overview {
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.genresList {
+  font-weight: 700;
+  margin-top: 10px;
+}
+.genresList_item {
+  margin-bottom: 5px;
+}
+
+.additionalInfoThumb {
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 10px 0;
+  border: 2px solid #b00b6842;
+  box-shadow: box-shadow;
+}
+
+.additionalText {
+  text-align: center;
+}
+
+.addOnsLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.showAddonLink {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: #e2f7ff;
+  color: black;
+  transition: all transition-duration transition-function;
+}
+.showAddonLink:hover {
+  background-color: #cab7c3f1;
+  transform: scale(0.98);
+}

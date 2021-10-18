@@ -1,0 +1,42 @@
+.movieList {
+  display: grid;
+  max-width: calc(100vw - 48px);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movieList_elem {
+  display: flex;
+  width: 340px;
+  align-items: center;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(105, 105, 105, 0.16),
+      0 3px 6px rgba(71, 71, 71, 0.23);
+  transition: all transition-duration transition-function;
+  object-fit: cover;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.movieList_elem:hover,
+focus {
+  box-shadow: 0 9px 15px rgba(0, 0, 0, 0.16), 0 5px 7px rgba(0, 0, 0, 0.23);
+  transform: scale(1.04);
+}
+
+.movieCardLink {
+  text-decoration: none;
+  color: #000;
+}
+.movie_card {
+  width: 310px;
+}
