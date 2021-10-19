@@ -43,9 +43,9 @@ const getData = () => {
     setPage((prev) => prev + 1);
     setStatus('resolved');
 
-    if (page !== 1) {
-    handlePageScroll();
-    }
+    // if (page !== 1) {
+    // handlePageScroll();
+    // }
 };
 
     const handleQuery = (newQuery) => {
@@ -64,12 +64,12 @@ const getData = () => {
     const loadMore = () => {
     getData();
     };
-    const handlePageScroll = () => {
-    window.scrollTo({
-    top: document.documentElement.scrollHeight,
-    behavior: 'smooth',
-    });
-};
+    // const handlePageScroll = () => {
+    // window.scrollTo({
+    // top: document.documentElement.scrollHeight,
+    // behavior: 'smooth',
+    // });
+
 
 
 return (

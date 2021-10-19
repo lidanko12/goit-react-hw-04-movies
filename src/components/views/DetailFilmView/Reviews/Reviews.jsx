@@ -37,27 +37,25 @@ export default function Reviews() {
       {status === 'pending' && (
         <Load/>
       )}
-      
-      {reviews.length !== 0 && (
-        <div className= {s.reviews_container}>
-          <h3 style={{ textAlign: 'center' }}>
-            Popular Reviews for this movie:
-          </h3>
-          <ul className="reviewsList">
-            {reviews.map(({ id, author, content, url }) => (
-              <li key={id} className={s.reviews_item}>
-                <h3  className={s.reviews_title}>
-                {author} :
-                </h3>
-                <p className={s.review_text}>{content}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </>
-  );
+      <div className={s.reviews_container}>
+        <ul className="ReviewsList">
+          {reviews && reviews.length > 0
+            ? reviews.map(({ id, author, content, url }) => (
+                <li className={s.review_item} key={id}>
+                  <h3 className={s.review_title}>Author: {author}</h3>
+
+                  <p className={s.reviews_text}>{content.slice(0, 730)}...</p>
+                </li>
+              ))
+            : "We don't have any reviews for this movie"}
+        </ul>
+      </div>
+      </>
+      );
+    
 }
+
+
 
 Reviews.propTypes = {
   movieId: PropTypes.string,

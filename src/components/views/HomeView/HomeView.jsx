@@ -26,7 +26,7 @@ export default function HomeView() {
     setPage((prev) => prev + 1);
 
     if (page !== 1) {
-    handlePageScroll();
+    // handlePageScroll();
     }
     setStatus('resolved');
   };
@@ -36,13 +36,12 @@ export default function HomeView() {
     
   };
 
-  const handlePageScroll = () => {
-    window.scrollTo({
-      left: 0,
-      top: document.documentElement.scrollHeight,
-      behavior: 'smooth',
-    });
-  };
+  // const handlePageScroll = () => {
+  //   window.scrollTo({
+  //     top: document.documentElement.scrollHeight,
+  //     behavior: 'smooth',
+  //   });
+  // };
 
   const showLoadMore = movies.length >=19
 

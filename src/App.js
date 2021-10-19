@@ -32,7 +32,7 @@ export default function App() {
         <Route path="/movies" exact>
             <FilmView />
         </Route> 
-        <Route path="/">
+        <Route>
           <PageNotFindView />
         </Route>
         </Switch>
